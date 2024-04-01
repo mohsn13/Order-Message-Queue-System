@@ -1,0 +1,14 @@
+const url = 'https://sqs.us-east-1.amazonaws.com/767397887485/coffee-ordering-queue.fifo';
+export const handler = async (event) => {
+  console.log(JSON.stringify(event));
+  const order = JSON.parse(event.Records[0].body);
+  console.log(`Recieved Order: `,order);
+  console.log(`Coffee Shop #1 Making Coffee:... ... `);
+  await sleep(5000);
+};
+
+function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  })
+}
