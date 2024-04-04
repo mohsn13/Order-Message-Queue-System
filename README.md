@@ -1,6 +1,6 @@
 # Order Message Queue System
 
-This project aims to create a scalable and reliable order message queue system using Amazon Web Services (AWS). The system utilizes Amazon Simple Queue Service (SQS) and AWS Lambda to efficiently handle incoming orders and process them in a distributed and fault-tolerant manner.
+This project aims to create a scalable and reliable order message queue system using Amazon Web Services (AWS) fror two fictional coffee shops. The system utilizes Amazon Simple Queue Service (SQS) and AWS Lambda to efficiently handle incoming orders and process them in a distributed and fault-tolerant manner.
 
 _Amazon SQS_: SQS is used as a scalable and fully managed message queuing service. Each coffee shop has its dedicated SQS queue where incoming orders are placed.
 
